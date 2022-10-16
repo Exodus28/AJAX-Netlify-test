@@ -9,3 +9,10 @@ $.ajax({
 }).done(function(data) {
     $("h1").html(data)
 })
+
+//add data with append rather than replacing
+$.ajax({
+    url:"test.html"
+}).done(function(data) {
+    $("h1").append(data)
+})
