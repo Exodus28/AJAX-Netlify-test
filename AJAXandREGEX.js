@@ -7,5 +7,5 @@ $.get("test.html", function(data) { //get html file, callback function, data is 
 $.ajax({
     url:"test.html"
 }).done(function(data) {
-    alert(data)
+    $("h1").html(data)
 })
