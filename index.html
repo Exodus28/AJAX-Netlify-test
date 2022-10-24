@@ -12,12 +12,24 @@
         <link rel="stylesheet" href="AJAXandREGEX.css">
     </head>
     <body>
-        <h1>Asynchronous Javscript and XML</h1>
+        <h1 id="title">Asynchronous Javascript and XML</h1>
         
         <p>This is some text</p>
 
         <p>This is some more text</p>
 
+        <p id="print"></p>
+
     </body>
-    <footer><script src="AJAXandREGEX.js"></script></footer>
-</html>
+    <footer>
+        <script src="AJAXandREGEX.js"></script>
+        <script>
+            var regex1=/this/g //regex variable/term to search for
+            var regex2=/a/g
+            
+            var string = String($("body").html) //convert to string
+            var result = string.match(regex2) //check for match
+            console.log(result)
+        </script>
+    </footer>
+</html>/           
